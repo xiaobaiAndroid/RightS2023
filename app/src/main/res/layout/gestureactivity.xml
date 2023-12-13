@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FBF8F8"
+    android:id="@+id/gesture_framelayout"
+    android:layout_height="match_parent">
+        <!--search container-->
+        <LinearLayout
+            android:id="@+id/ll_search_container"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="match_parent"
+            android:background="#C64040"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_search_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_left_black" />
+
+                <EditText
+                    android:id="@+id/et_search_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/iv_search_left"
+                    android:background="@drawable/search_rect_bg"
+                    android:drawableStart="@drawable/search_light_icon"
+                    android:drawablePadding="4dp"
+                    android:imeOptions="actionDone"
+                    android:hint="搜索"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="16dp" />
+
+                <!--                <ProgressBar-->
+                <!--                    android:id="@+id/progressBar"-->
+                <!--                    style="?android:attr/progressBarStyle"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    android:layout_width="24dp"-->
+                <!--                    android:layout_alignParentEnd="true"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:layout_marginEnd="10dp"-->
+                <!--                    android:layout_height="24dp"-->
+                <!--                    android:indeterminateDrawable="@drawable/progress_indeterminate" />-->
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fmlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+        <com.benz.view.GestureDetectorView
+            android:id="@+id/gesture_detectore_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            />
+    </FrameLayout>
+</FrameLayout>

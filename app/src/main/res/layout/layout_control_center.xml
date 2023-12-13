@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="223dp"
+    android:focusable="true">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_bottom_bg1"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:scaleType="centerInside"
+        />
+
+    <ImageView
+        android:id="@+id/homeBgIv"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_bottom_home_bg"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <com.android.launcher.ac.controller.ACAdjustView
+        android:id="@+id/driverACAdjustView"
+        android:layout_width="@dimen/bottom_control_h"
+        android:layout_height="@dimen/bottom_control_h"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/ic_bottom_ac_control"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.android.launcher.ac.controller.ACAdjustView
+        android:id="@+id/frontSeatACAdjustView"
+        android:layout_width="@dimen/bottom_control_h"
+        android:layout_height="@dimen/bottom_control_h"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_bottom_ac_control"
+        />
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_bottom_back"
+        app:layout_constraintStart_toStartOf="@id/homeBgIv"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/previousIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:padding="6dp"
+        android:rotation="180"
+        android:src="@drawable/ic_control_next"
+        app:layout_constraintTop_toTopOf="@id/nextIV"
+        app:layout_constraintEnd_toStartOf="@id/nextIV"
+        app:layout_constraintBottom_toBottomOf="@id/nextIV"
+        />
+
+    <ImageView
+        android:id="@+id/nextIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_control_next"
+        app:layout_constraintEnd_toEndOf="@id/homeBgIv"
+        app:layout_constraintTop_toTopOf="@id/homeBgIv"
+        android:layout_marginEnd="114dp"
+        />
+
+
+    <TextView
+        android:id="@+id/airflowTV"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/climate_menu"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        app:layout_constraintStart_toEndOf="@id/autoV"
+        android:layout_marginStart="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/airflowTV"
+        android:src="@drawable/ic_bottom_winddir"
+        android:layout_marginBottom="8dp"
+        />
+
+
+    <com.android.launcher.ac.controller.ACButtomView
+        android:id="@+id/acOffV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/frontSeatACAdjustView"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="31.5dp"
+        app:text="A/C" />
+
+    <com.android.launcher.ac.controller.ACButtomView
+        android:id="@+id/autoV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="47dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/driverACAdjustView"
+        android:layout_marginBottom="31.5dp"
+        app:text="@string/auto" />
+
+
+    <ImageView
+        android:id="@+id/innerLoopIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_car_inner_loop"
+        app:layout_constraintBottom_toTopOf="@id/airflowTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeBgIv" />
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/leftAirflowIV"-->
+    <!--        android:layout_width="30dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/frontDemistIV"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/frontDemistIV"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:layout_marginTop="70dp"-->
+    <!--        android:src="@drawable/car_air_auto"-->
+    <!--        />-->
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/rightAirflowIV"-->
+    <!--        android:layout_width="30dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/leftAirflowIV"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/leftAirflowIV"-->
+    <!--        android:src="@drawable/car_air_auto"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/rearDemistIV"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/rearDemistIV"-->
+    <!--        />-->
+
+
+    <ImageView
+        android:id="@+id/frontDemistIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/ic_bottom_front_demist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/autoV"
+        app:layout_constraintEnd_toEndOf="@id/autoV"
+        />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="@id/frontDemistIV"
+        app:layout_constraintEnd_toEndOf="@id/frontDemistIV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="89dp"
+        android:background="#727375"
+        />
+
+
+    <ImageView
+        android:id="@+id/rearDemistIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/ic_bottom_rear_demist"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/acOffV"
+        app:layout_constraintEnd_toEndOf="@id/acOffV"
+         />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="@id/rearDemistIV"
+        app:layout_constraintEnd_toEndOf="@id/rearDemistIV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="89dp"
+        android:background="#727375"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

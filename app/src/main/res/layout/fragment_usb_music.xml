@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/musicListRV"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/lineV"
+        android:overScrollMode="never"
+        />
+
+
+    <com.android.launcher.view.LoadingView
+        android:id="@+id/loadingV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/musicListRV"
+        app:layout_constraintEnd_toEndOf="@id/musicListRV"
+        app:layout_constraintTop_toTopOf="@id/musicListRV"
+        app:layout_constraintBottom_toBottomOf="@id/musicListRV"
+        android:visibility="gone"
+        />
+
+
+    <View
+        android:id="@+id/lineV"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/cl_ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/musicListRV"
+        app:layout_constraintEnd_toStartOf="@id/playCL"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/playCL"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/lineV"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bluetoothCV"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/cl_carview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/usbIV"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_usb_drive"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/musicTitleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@color/cl_ffffff"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bluetoothCV" />
+
+        <TextView
+            android:id="@+id/musicLyricTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="60dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@color/cl_ffffff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/musicTitleTV" />
+
+
+
+        <TextView
+            android:id="@+id/durationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ffffff"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/currentProgressTV"
+            app:layout_constraintBottom_toBottomOf="@id/currentProgressTV"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="40dp"
+            android:text="00:00"
+            />
+
+        <TextView
+            android:id="@+id/currentProgressTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ffffff"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/playCV"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="40dp"
+            android:text="00:00"
+            />
+
+        <com.warkiz.widget.IndicatorSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/currentProgressTV"
+            app:layout_constraintEnd_toStartOf="@id/durationTV"
+            app:layout_constraintTop_toTopOf="@id/currentProgressTV"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/currentProgressTV"
+            app:isb_max="100"
+            app:isb_min="0"
+            app:isb_show_tick_texts="false"
+            app:isb_show_indicator="none"
+            app:isb_show_tick_marks_type="none"
+            app:isb_tick_texts_color="@color/ffffff"
+            app:isb_tick_texts_size="10sp"
+            app:isb_thumb_color="@color/ffffff"
+            app:isb_thumb_size="8sp"
+            app:isb_track_background_color="@color/cl_666666"
+            app:isb_track_progress_color="@color/ffffff"
+            app:isb_track_background_size="3dp"
+            app:isb_track_progress_size="6dp"
+            app:isb_track_rounded_corners="true"
+            />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/playCV"
+            style="@style/musicButtonCardViewStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/playIV"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_music_play" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/previousCV"
+            style="@style/musicButtonCardViewStyle"
+            app:layout_constraintEnd_toStartOf="@id/playCV"
+            app:layout_constraintTop_toTopOf="@id/playCV"
+            app:layout_constraintBottom_toBottomOf="@id/playCV"
+            android:layout_marginEnd="60dp"
+            >
+
+            <ImageView
+                android:id="@+id/previousIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_music_next"
+                android:rotation="180"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/nextCV"
+            style="@style/musicButtonCardViewStyle"
+            app:layout_constraintStart_toEndOf="@id/playCV"
+            app:layout_constraintTop_toTopOf="@id/playCV"
+            app:layout_constraintBottom_toBottomOf="@id/playCV"
+            android:layout_marginStart="60dp"
+            >
+
+            <ImageView
+                android:id="@+id/nextIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_music_next"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

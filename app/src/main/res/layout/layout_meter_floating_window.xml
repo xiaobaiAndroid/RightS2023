@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <!--    <View-->
+    <!--        android:id="@+id/bgV"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        android:background="@drawable/bg_floating"-->
+    <!--        />-->
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back1"
+        app:layout_constraintBottom_toTopOf="@id/directionCL"
+        app:layout_constraintEnd_toEndOf="@id/directionCL"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_home"
+        android:scaleType="centerInside"
+        android:padding="2dp"
+        app:layout_constraintBottom_toTopOf="@id/directionCL"
+        app:layout_constraintStart_toStartOf="@id/directionCL"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/directionCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_meter_floating"
+        >
+
+        <TextView
+            android:id="@+id/enterTV"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="OK"
+            android:gravity="center"
+            android:textColor="@color/ffffff"
+            android:textSize="28sp"
+            />
+
+        <ImageView
+            android:id="@+id/upIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/enterTV"
+            app:layout_constraintEnd_toEndOf="@id/enterTV"
+            app:layout_constraintBottom_toTopOf="@id/enterTV"
+            android:src="@drawable/ic_direction"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/downIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/enterTV"
+            app:layout_constraintEnd_toEndOf="@id/enterTV"
+            app:layout_constraintTop_toBottomOf="@id/enterTV"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_direction"
+            android:rotation="180"
+            />
+
+
+        <ImageView
+            android:id="@+id/leftRotateIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/leftIV"
+            app:layout_constraintTop_toBottomOf="@id/downIV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_left_rotate"
+            />
+
+        <ImageView
+            android:id="@+id/rightRotateIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/rightIV"
+            app:layout_constraintTop_toBottomOf="@id/downIV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_right_rotate"
+            />
+
+
+        <ImageView
+            android:id="@+id/leftIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/enterTV"
+            app:layout_constraintTop_toTopOf="@id/enterTV"
+            app:layout_constraintBottom_toBottomOf="@id/enterTV"
+            android:src="@drawable/ic_direction"
+            android:rotation="-90"
+            />
+
+        <ImageView
+            android:id="@+id/rightIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/enterTV"
+            app:layout_constraintTop_toTopOf="@id/enterTV"
+            app:layout_constraintBottom_toBottomOf="@id/enterTV"
+            android:src="@drawable/ic_direction"
+            android:rotation="90"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

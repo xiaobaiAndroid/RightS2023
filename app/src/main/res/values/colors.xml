@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#EC0D0D</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreen">#6DED1B</color>
+    <!-- 测试-->
+    <color name="dkgray">#FF444444</color>
+    <color name="weatherInfo">#BD444444</color>
+    <color name="cl_cccccc">#cccccc</color>
+    <color name="cl_666666">#666666</color>
+    <color name="cl_999999">#999999</color>
+    <color name="white">#FFF</color>
+
+
+    <color name="arc_progress_finished_color">#FFF</color>
+    <color name="arc_progress_unfinished_color">#FFF</color>
+    <color name="ffffff">#ffffff</color>
+    <color name="cl_ffffff">#ffffff</color>
+    <color name="cl_50ffffff">#50ffffff</color>
+    <color name="cl_353a46">#353A46</color>
+    <color name="cl_375d97">#375D97</color>
+    <color name="cl_22417f">#22417F</color>
+    <color name="cl_242c38">#242C38</color>
+    <color name="cl_000000">#000000</color>
+    <color name="cl_indicator">#5E9FF8</color>
+    <color name="cl_838c9c">#838C9C</color>
+    <color name="cl_button">#375D97</color>
+    <color name="cl_2c3e6a">#2C3E6A</color>
+    <color name="cl_bc2a5d">#BC2A5D</color>
+    <color name="cl_f1f1f1">#f1f1f1</color>
+    <color name="cl_0e1f41">#0E1F41</color>
+    <color name="cl_tab_unselected">#818692</color>
+    <color name="cl_tab_selected">#ffffff</color>
+    <color name="cl_30ffffff">#30ffffff</color>
+    <color name="cl_item">#131E3D</color>
+    <color name="cl_item_selected">#805E9FF8</color>
+    <color name="activity_color">#131E3D</color>
+    <color name="cl_515151">#515151</color>
+    <color name="cl_yellow">#FFFF00</color>
+    <color name="cl_carview">#1C2F4B</color>
+    <color name="item_bg">#131E3D</color>
+
+</resources>

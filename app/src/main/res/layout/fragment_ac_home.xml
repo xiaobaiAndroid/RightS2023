@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/activity_color"
+    android:focusable="true"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tabLayoutCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/activity_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tl_indicator_height="@dimen/dp_2"
+            app:tl_indicator_color="@color/cl_indicator"
+            android:layout_gravity="center_horizontal"
+            app:tl_tab_space_equal="true"
+            app:tl_textsize="@dimen/tab_text_size"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            app:tl_indicator_width="110dp"
+            app:tl_textSelectColor="@color/cl_ffffff"
+            app:tl_textUnselectColor="@color/cl_838c9c"
+            android:layout_marginTop="50dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.android.launcher.ac.airflow.AirflowPatternView
+        android:id="@+id/airflowPatternView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutCV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <com.android.launcher.ac.winddirection.rear.RearWindDirectionView
+        android:id="@+id/rearWindDirectionView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutCV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+
+    <com.android.launcher.ac.winddirection.front.FrontWindDirectionView
+        android:id="@+id/frontWindDirectionView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutCV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

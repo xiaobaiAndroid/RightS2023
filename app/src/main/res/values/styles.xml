@@ -1,0 +1,89 @@
+<resources>
+
+    <style name="Theme.NoTitle_FullScreen" parent="Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.Launcher" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 通过windowBackground可以设置背景色、背景图片、能解析出图片的XML文件等-->
+        <!--<item name="android:windowBackground">@drawable/layer_launcher</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:textColor">@color/ffffff</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light" >
+        <item name="android:selectableItemBackground">@android:color/transparent</item>
+<!--        <item name="android:selectableItemBackgroundBorderless"-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--整合第三方 -->
+    <style name="nodarken_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="weekName">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="MyTabTextStyle" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/tab_text_size</item>
+    </style>
+
+    <style name="CardViewStyle1">
+        <item name="cardBackgroundColor">@color/cl_carview</item>
+        <item name="cardCornerRadius">@dimen/bottom_control_h_half</item>
+        <item name="cardElevation">8dp</item>
+    </style>
+
+
+    <style name="musicButtonCardViewStyle" parent="CardView">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="cardCornerRadius">35dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardBackgroundColor">@color/cl_carview</item>
+    </style>
+
+
+    <declare-styleable name="NumKeyView">
+        <attr name="deleteDrawable" format="reference"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalView">
+        <attr name="dsv_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

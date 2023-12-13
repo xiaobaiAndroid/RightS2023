@@ -1,0 +1,275 @@
+<resources>
+    <string name="app_name">BenZ-Right</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!--    <style name="custom_seekbar" parent="@android:style/Widget.SeekBar">-->
+    <!--        <item name="android:maxHeight">8dp</item>-->
+    <!--        <item name="android:indeterminateOnly">false</item>-->
+    <!--        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>-->
+    <!--        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>-->
+    <!--        <item name="android:minHeight">8dp</item>-->
+    <!--        <item name="android:thumb">@android:color/transparent</item>-->
+    <!--        <item name="android:thumbOffset">10dp</item>-->
+    <!--    </style>-->
+
+    <!-- 键盘自定义按键，这只是DEMO，你可以自定义自己的 -->
+    <string name="keycode_space">62</string> <!-- 空格 -->
+    <string name="keycode_center">66</string> <!-- 回车 -->
+    <string name="keycode_back">4</string> <!-- 返回 -->
+    <string name="keycode_left">21</string> <!-- 左边 -->
+    <string name="keycode_right">22</string> <!-- 右边 -->
+    <string name="keycode_del">67</string> <!-- 删除 -->
+
+
+    <!-- viewpager 标题栏字体-->
+    <string name="fzlt_zhun_hei">FZLTZHUNHEI_GBK.ttf</string>
+    <string name="fzlt_cu_hei">FZLTHC_GBK.ttf</string>
+
+    <string name="nav_tab_normal_ttf">@string/fzlt_zhun_hei</string>
+    <string name="nav_tab_focus_ttf">@string/fzlt_cu_hei</string>
+    <string name="app_auto">gaode</string>
+    <string name="airflow_main_driver" translatable="false">气流分配,驾驶员</string>
+    <string name="airflow_copilot" translatable="false">气流分配,前排乘客</string>
+    <string name="wifi_init" translatable="false">开始建立车机通信</string>
+    <string name="wifi_connecting" translatable="false">车机通信连接中。。。</string>
+    <string name="wifi_success" translatable="false">车机通信连接成功！</string>
+    <string name="wifi_fail" translatable="false">连接失败，请重新启动汽车</string>
+    <string name="wifi_interrupt" translatable="false">车机通信中断…开始自动重新连接</string>
+    <string name="air_off" translatable="false">空调关闭</string>
+    <string name="temp_unit">℃</string>
+    <string name="network_exception" translatable="false">网络异常</string>
+    <string name="not_contacts" translatable="false">读取电话本失败</string>
+    <string name="speed_limit" translatable="false">速度限制</string>
+    <string name="not_play_music" translatable="false">未播放歌曲</string>
+    <string name="not_music_lyric" translatable="false">没有歌词</string>
+    <string name="bluetooth_not_connect" translatable="false">(蓝牙未连接)</string>
+    <string name="music_play_list" translatable="false">播放列表</string>
+    <string name="company" translatable="false">大川广州汽车服务有限公司</string>
+    <string name="company_mobile" translatable="false">电话号码：139 2608 8851</string>
+    <string name="change_logo_hint" translatable="false">更换logo中,请勿操作</string>
+    <string name="set_original_car_km" translatable="false">设置原车公里数</string>
+    <string name="confirm" translatable="false">确定</string>
+    <string name="please_input" translatable="false">请输入</string>
+    <string name="activate_running" translatable="false">正在激活稍等</string>
+    <string name="activate_hint" translatable="false">是否有手机蓝牙音乐播放？</string>
+    <string name="activate_success" translatable="false">激活成功</string>
+    <string name="map">导航</string>
+    <string name="fm">收音机</string>
+    <string name="music">娱乐/多媒体</string>
+    <string name="phone">电话</string>
+    <string name="car">车辆</string>
+    <string name="system">系统</string>
+    <string name="bluetooth_connected">(蓝牙已连接)</string>
+    <string name="bluetooth_music">蓝牙音乐</string>
+    <string name="please_connect_to_bluetooth">请链接蓝牙</string>
+    <string name="sunday">星期日</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="air_conditioning_system">空调系统</string>
+    <string name="driving_assistance_system">驾驶辅助系统</string>
+    <string name="energy_consumption">能耗</string>
+    <string name="lighting_delay_setting">照明延迟设定</string>
+    <string name="car_setting">车辆设定</string>
+    <string name="car_type_select">汽车类型选择</string>
+    <string name="automatic_matching_activation">自动匹配激活</string>
+    <string name="set_the_mileage_of_the_original_car">设置原车公里数</string>
+    <string name="please_switch_to_the_rear_ac_control">请切换到后空调控制</string>
+    <string name="climate_model">气候模式</string>
+    <string name="ac_filter_element">空调滤芯</string>
+    <string name="air_flow_distribution">气流分配</string>
+    <string name="wind_speed_setting">风量设定</string>
+    <string name="temperature_setting">温度设定</string>
+    <string name="front_and_rear_ac_switch">前后空调切换</string>
+    <string name="rear_ac_control">后空调控制</string>
+    <string name="driver">驾驶员</string>
+    <string name="front_passenger">前排乘客</string>
+    <string name="concentration">集中</string>
+    <string name="diffuse">扩散</string>
+    <string name="medium">中等</string>
+    <string name="climate_model_front_passenger">气候模式,前排乘客</string>
+    <string name="climate_model_driver">气候模式,驾驶员</string>
+    <string name="air_flow_distribution_driver">气流分配,驾驶员</string>
+    <string name="wind_speed_setting_front_passenger">风速设置,前排乘客</string>
+    <string name="wind_speed_setting_driver">风速设置,驾驶员</string>
+    <string name="temperature_setting_driver">温度设定,驾驶员</string>
+    <string name="temperature_setting_front_passenger">温度设定,前排乘客</string>
+    <string name="front_ac_control">前空调控制</string>
+    <string name="left_temp_set">左温度设定</string>
+    <string name="right_temp_set">右温度设定</string>
+    <string name="left_wind_direction_set">左风向设定</string>
+    <string name="right_wind_direction_set">右风向设定</string>
+    <string name="temperature_setting_left">温度设定,左侧</string>
+    <string name="temperature_setting_right">温度设定,右侧</string>
+    <string name="rear_ac_left_wind_direction">后空调,左风向</string>
+    <string name="rear_ac_right_wind_direction">后空调,右风向</string>
+    <string name="rear_ac_wind_speed">后空调设置,风速</string>
+    <string name="Individual_configuration">Individual 配置</string>
+    <string name="engine_data">发动机数据</string>
+    <string name="driving_mode">驾驶模式</string>
+    <string name="suspension_system">悬挂</string>
+    <string name="motor_starting">转向</string>
+    <string name="esp">ESP</string>
+    <string name="comfort">舒适</string>
+    <string name="classic">经典</string>
+    <string name="sport">运动</string>
+    <string name="active_braking_assist">主动制动系统辅助</string>
+    <string name="attention_aid_system">注意力辅助系统</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="sensitive">灵敏</string>
+    <string name="standard">标准</string>
+    <string name="advance">提前</string>
+    <string name="moderation">适中</string>
+    <string name="delay">延迟</string>
+    <string name="ambient_lighting_set">环境照明设定</string>
+    <string name="interior_lighting_delay_set">内部灯光延迟</string>
+    <string name="exterior_lighting_delay_set">外部灯光延迟</string>
+    <string name="lighting_system_setting">照明系统设定</string>
+    <string name="second">秒</string>
+    <string name="exterior_lighting_delay">外部灯光延迟</string>
+    <string name="interior_lighting_delay">内部灯光延迟</string>
+    <string name="central_door_lock_feedback">中央门锁反馈</string>
+    <string name="automatic_closing">锁车时自动合拢</string>
+    <string name="rearview_mirror_down">后驶时后视镜下降</string>
+    <string name="suitcase_opening_limit">后舱盖高度限制</string>
+    <string name="getting_in_and_out_assistance">上下车辅助</string>
+    <string name="scrolling_direction">滚轮方向</string>
+    <string name="headrest_recline">头枕放倒</string>
+    <string name="seat_belt_assist">安全带辅助</string>
+    <string name="not_activated">没有激活过</string>
+    <string name="in_the_end_there_is_no_more">到底了，没有了</string>
+    <string name="activated">激活过的：</string>
+    <string name="fiber_optic_activation">光纤激活</string>
+    <string name="activate">激活</string>
+    <string name="have">有</string>
+    <string name="cancel">取消</string>
+    <string name="display">显示</string>
+    <string name="panorama">360全景</string>
+    <string name="audio">音频</string>
+    <string name="bluetooth_device">蓝牙设备</string>
+    <string name="calendar">时间及日期</string>
+    <string name="unit">单位</string>
+    <string name="system_info">系统信息</string>
+    <string name="modify_logo">更换LOGO</string>
+    <string name="restoration">复位</string>
+    <string name="after_sale">售后信息</string>
+    <string name="brightness_modify">亮度调整</string>
+    <string name="volume_setting">音量设置</string>
+    <string name="volume_decrease_during_driver">驾驶建议时音量减小</string>
+    <string name="volume_decrease_during_phone">接听电话时音量变小</string>
+    <string name="dsp_setting">DSP</string>
+    <string name="alarm_volume_setting">报警音量设置</string>
+    <string name="volume_modify">音量调整</string>
+    <string name="bluetooth_info_title">蓝牙信息:</string>
+    <string name="connected">已连接</string>
+    <string name="not_connected">未连接</string>
+    <string name="bluetooth_name">蓝牙名称：</string>
+    <string name="bluetooth_status">蓝牙状态：</string>
+    <string name="fast">快</string>
+    <string name="middle">中</string>
+    <string name="slow">慢</string>
+    <string name="touchpad_setting">触摸板设置</string>
+    <string name="sun">日</string>
+    <string name="mon">一</string>
+    <string name="tues">二</string>
+    <string name="wednes">三</string>
+    <string name="thurs">四</string>
+    <string name="fri">五</string>
+    <string name="satur">六</string>
+    <string name="back">返回</string>
+    <string name="unit_setting">单位设置</string>
+    <string name="machine_type">型号:</string>
+    <string name="android_version">Android版本:</string>
+    <string name="kernel_version">内核版本:</string>
+    <string name="manufacturer">生产商：</string>
+    <string name="resolution">屏幕分辨率:</string>
+    <string name="system_architecture">系统架构:</string>
+    <string name="android_reversion">Android修订版本:</string>
+    <string name="version_name">APP版本:</string>
+    <string name="default_logo">默认</string>
+    <string name="logo1">图片1</string>
+    <string name="logo2">图片2</string>
+    <string name="logo_select">LOGO选择</string>
+    <string name="reset_data">复位数据</string>
+    <string name="resetting">复位中</string>
+    <string name="reset_complete">复位完成</string>
+    <string name="after_sale_company">售后服务公司:</string>
+    <string name="address_title">公司地址:</string>
+    <string name="address">广东省广州市花都区华兴中路一号</string>
+    <string name="after_sale_contact1">售后联系人1:</string>
+    <string name="contact1">徐生/13128725880</string>
+    <string name="after_sale_contact2">售后联系人2:</string>
+    <string name="contact2">刘生/13416371506</string>
+    <string name="language">语言</string>
+    <string name="language_select">语言选择</string>
+    <string name="following_system">跟随系统</string>
+    <string name="chinese">中文</string>
+    <string name="english">英文</string>
+    <string name="input_device">原车仪表</string>
+    <string name="gallery">图库</string>
+    <string name="downloading">下载中</string>
+    <string name="version_update">版本更新</string>
+    <string name="upload_fail_server_not_response">上传日志失败，服务器未响应</string>
+    <string name="setting">设定</string>
+    <string name="info">信息</string>
+    <string name="apps">Apps</string>
+    <string name="climate_menu">气候菜单</string>
+    <string name="auto">自动</string>
+    <string name="ac_tab1">第一排座椅</string>
+    <string name="ac_tab2">第二排座椅</string>
+    <string name="bluetooth">蓝牙</string>
+    <string name="usb">USB</string>
+    <string name="contacts">通讯录</string>
+    <string name="mobile_phone">智能手机</string>
+    <string name="lighting">照明</string>
+    <string name="car_assist">车辆辅助</string>
+    <string name="not_set_mileage">请输入公里数</string>
+    <string name="central_display">中央显示屏</string>
+    <string name="central_display_luminance">中央显示屏亮度</string>
+    <string name="display_screen">显示屏</string>
+    <string name="not_find_carplay_app">没有安装Carplay服务</string>
+    <string name="device_id">设备ID:</string>
+    <string name="time_zone">时区</string>
+    <string name="front">前</string>
+    <string name="rear">后</string>
+    <string name="set">设置</string>
+    <string name="unconnected">未连接</string>
+    <string name="not_title">没有标题</string>
+    <string name="ac_tab3">气流模式</string>
+    <string name="concentrate">集中</string>
+    <string name="please_stop_bluetooth_music">请先停止播放蓝牙音乐</string>
+    <string name="search">搜索</string>
+    <string name="start_nav">开始导航</string>
+    <string name="time_priority">时间优先</string>
+    <string name="km">公里</string>
+    <string name="nav_straegy_1">时间优先</string>
+    <string name="nav_straegy_2">距离优先</string>
+    <string name="nav_straegy_3">不走高速</string>
+    <string name="nav_straegy_0">推荐</string>
+    <string name="day">天</string>
+    <string name="mniute">分钟</string>
+    <string name="hour">小时</string>
+    <string name="input_address">请输入地址</string>
+    <string name="poi_types">\"餐馆|电影院|旅游景点|火车站|地铁站|候机室|学校|传媒机构|会展中心|博物馆|加油站|汽车养护|洗车场|汽车维修
+        |快餐厅|商场|中餐厅|超级市场|售票处|KTV|酒吧|电影院|综合医院|专科医院|宾馆酒店|商务写字楼|住宅区|政府机关
+        |公检法机构|交通车辆管理|银行|公司|普通地名|自然地名|交通地名\"</string>
+    <string name="history_record">历史记录</string>
+    <string name="clear">清空</string>
+    <string name="steering_column">转向柱</string>
+    <string name="seat">座位</string>
+    <string name="steering_column_seat">转向柱和座位</string>
+    <string name="update">更新</string>
+    <string name="download">下载</string>
+    <string name="offlinemap">离线地图</string>
+    <string name="updating">更新中</string>
+    <string name="unzip">解压中</string>
+</resources>

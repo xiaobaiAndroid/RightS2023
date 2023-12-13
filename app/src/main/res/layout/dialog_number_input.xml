@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_number_input">
+
+    <TextView
+        android:id="@+id/contentTV"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_number_edit"
+        android:elevation="6dp"
+        android:gravity="center_vertical"
+        android:hint="0.0"
+        android:lines="1"
+        android:maxLength="15"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/cl_ffffff"
+        android:textColorHint="@color/cl_999999"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="@id/numberRV"
+        app:layout_constraintStart_toStartOf="@id/numberRV"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/numberRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contentTV" />
+
+    <TextView
+        android:id="@+id/confirmTV"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/cl_375d97"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="@dimen/dp_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/numberRV"
+        app:layout_constraintStart_toStartOf="@id/numberRV"
+        app:layout_constraintTop_toBottomOf="@id/numberRV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

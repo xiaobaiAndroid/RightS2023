@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name">BenZ-Right</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!--    <style name="custom_seekbar" parent="@android:style/Widget.SeekBar">-->
+    <!--        <item name="android:maxHeight">8dp</item>-->
+    <!--        <item name="android:indeterminateOnly">false</item>-->
+    <!--        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>-->
+    <!--        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>-->
+    <!--        <item name="android:minHeight">8dp</item>-->
+    <!--        <item name="android:thumb">@android:color/transparent</item>-->
+    <!--        <item name="android:thumbOffset">10dp</item>-->
+    <!--    </style>-->
+
+    <!-- 键盘自定义按键，这只是DEMO，你可以自定义自己的 -->
+    <string name="keycode_space">62</string> <!-- 空格 -->
+    <string name="keycode_center">66</string> <!-- 回车 -->
+    <string name="keycode_back">4</string> <!-- 返回 -->
+    <string name="keycode_left">21</string> <!-- 左边 -->
+    <string name="keycode_right">22</string> <!-- 右边 -->
+    <string name="keycode_del">67</string> <!-- 删除 -->
+
+
+    <!-- viewpager 标题栏字体-->
+    <string name="fzlt_zhun_hei">FZLTZHUNHEI_GBK.ttf</string>
+    <string name="fzlt_cu_hei">FZLTHC_GBK.ttf</string>
+
+    <string name="nav_tab_normal_ttf">@string/fzlt_zhun_hei</string>
+    <string name="nav_tab_focus_ttf">@string/fzlt_cu_hei</string>
+    <string name="app_auto">gaode</string>
+    <string name="airflow_main_driver" translatable="false">Driver</string>
+    <string name="airflow_copilot" translatable="false">Front passenger</string>
+    <string name="wifi_init" translatable="false">Start establishing vehicle-machine communication</string>
+    <string name="wifi_connecting" translatable="false">Vehicle-engine communication link...</string>
+    <string name="wifi_success" translatable="false">Vehicle-machine communication connection successful!</string>
+    <string name="wifi_fail" translatable="false">Connection failed, please restart the car</string>
+    <string name="wifi_interrupt" translatable="false">Vehicle-engine communication is down... The automatic reconnection starts</string>
+    <string name="air_off" translatable="false">Air conditioning off</string>
+    <string name="temp_unit">℃</string>
+    <string name="network_exception" translatable="false">Network anomaly</string>
+    <string name="not_contacts" translatable="false">Failed to read the phone book</string>
+    <string name="speed_limit" translatable="false">Speed limit</string>
+    <string name="not_play_music" translatable="false">Unplayed song</string>
+    <string name="not_music_lyric" translatable="false">No lyrics</string>
+    <string name="bluetooth_not_connect" translatable="false">(Bluetooth not connected)</string>
+    <string name="music_play_list" translatable="false">Playlist</string>
+    <string name="company" translatable="false">Dachuan Guangzhou Automobile Service Co., LTD</string>
+    <string name="company_mobile" translatable="false">Phone number：139 2608 8851</string>
+    <string name="change_logo_hint" translatable="false">Do not perform any operation while replacing the logo</string>
+    <string name="set_original_car_km" translatable="false">Set the mileage of the original car</string>
+    <string name="confirm" translatable="false">Confirm</string>
+    <string name="please_input" translatable="false">Please input</string>
+    <string name="activate_running" translatable="false">Active now. Hold on</string>
+    <string name="activate_hint" translatable="false">Is there Bluetooth music playing on your phone?</string>
+    <string name="activate_success" translatable="false">Successful activation</string>
+    <string name="map">Map</string>
+    <string name="fm">FM</string>
+    <string name="music">Music</string>
+    <string name="phone">Phone</string>
+    <string name="car">Car</string>
+    <string name="system">System</string>
+    <string name="bluetooth_connected">(Bluetooth connected)</string>
+    <string name="bluetooth_music">Bluetooth music</string>
+    <string name="please_connect_to_bluetooth">Please connect to Bluetooth</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="air_conditioning_system">Air conditioning system</string>
+    <string name="driving_assistance_system">Drive assistance system</string>
+    <string name="energy_consumption">Energy consumption</string>
+    <string name="lighting_delay_setting">Lighting delay setting</string>
+    <string name="car_setting">Car setting</string>
+    <string name="car_type_select">Car type select</string>
+    <string name="automatic_matching_activation">Automatic matching activation</string>
+    <string name="set_the_mileage_of_the_original_car">Set KM of the original car</string>
+    <string name="please_switch_to_the_rear_ac_control">Please switch to the AC control</string>
+    <string name="climate_model">Climate model</string>
+    <string name="ac_filter_element">AC filter element</string>
+    <string name="air_flow_distribution">Air flow distribution</string>
+    <string name="wind_speed_setting">Wind speed setting</string>
+    <string name="temperature_setting">Temperature setting</string>
+    <string name="front_and_rear_ac_switch">Front and rear AC switch</string>
+    <string name="rear_ac_control">Rear AC control</string>
+    <string name="driver">Driver</string>
+    <string name="front_passenger">Front passenger</string>
+    <string name="concentration">Concentration</string>
+    <string name="diffuse">Diffuse</string>
+    <string name="medium">Medium</string>
+    <string name="climate_model_front_passenger">Front passenger</string>
+    <string name="climate_model_driver">Driver</string>
+    <string name="air_flow_distribution_driver">Driver</string>
+    <string name="wind_speed_setting_front_passenger">Front passenger</string>
+    <string name="wind_speed_setting_driver">Driver</string>
+    <string name="temperature_setting_driver">Driver</string>
+    <string name="temperature_setting_front_passenger">Front passenger</string>
+    <string name="front_ac_control">Front AC control</string>
+    <string name="left_temp_set">Left temp set</string>
+    <string name="right_temp_set">Right temp set</string>
+    <string name="left_wind_direction_set">Left wind direction set</string>
+    <string name="right_wind_direction_set">Right wind direction set</string>
+    <string name="temperature_setting_left">Temp set,Left</string>
+    <string name="temperature_setting_right">Temp set,Right</string>
+    <string name="rear_ac_left_wind_direction">Rear AC left wind direction</string>
+    <string name="rear_ac_right_wind_direction">Rear AC right wind direction</string>
+    <string name="rear_ac_wind_speed">Rear AC wind speed</string>
+    <string name="Individual_configuration">Individual configuration</string>
+    <string name="engine_data">Engine data</string>
+    <string name="driving_mode">Driving mode</string>
+    <string name="suspension_system">Suspension system</string>
+    <string name="motor_starting">Motor starting</string>
+    <string name="esp">ESP</string>
+    <string name="comfort">Comfort</string>
+    <string name="classic">Classic</string>
+    <string name="sport">Sport</string>
+    <string name="active_braking_assist">Active braking assist</string>
+    <string name="attention_aid_system">Attention aid system</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="sensitive">Sensitive</string>
+    <string name="standard">Standard</string>
+    <string name="advance">Advance</string>
+    <string name="moderation">Moderation</string>
+    <string name="delay">Delay</string>
+    <string name="ambient_lighting_set">Ambient lighting set</string>
+    <string name="interior_lighting_delay_set">Interior lighting set</string>
+    <string name="exterior_lighting_delay_set">Exterior lighting set</string>
+    <string name="lighting_system_setting">Lighting system set</string>
+    <string name="second">s</string>
+    <string name="exterior_lighting_delay">Exterior lighting delay</string>
+    <string name="interior_lighting_delay">Interior lighting delay</string>
+    <string name="central_door_lock_feedback">Central door lock feedback</string>
+    <string name="automatic_closing">Automatic closing</string>
+    <string name="rearview_mirror_down">Rearview mirror down</string>
+    <string name="suitcase_opening_limit">Suitcase opening limit</string>
+    <string name="getting_in_and_out_assistance">Getting in and out assistance</string>
+    <string name="scrolling_direction">Scrolling direction</string>
+    <string name="headrest_recline">Headrest recline</string>
+    <string name="seat_belt_assist">Seat belt assist</string>
+    <string name="not_activated">Not activated</string>
+    <string name="in_the_end_there_is_no_more">In the end,there is no more</string>
+    <string name="activated">Activated：</string>
+    <string name="fiber_optic_activation">Fiber optic activation</string>
+    <string name="activate">Activate</string>
+    <string name="have">Have</string>
+    <string name="cancel">Cancel</string>
+    <string name="display">Display</string>
+    <string name="panorama">360 panorama</string>
+    <string name="audio">Audio</string>
+    <string name="bluetooth_device">Bluetooth device</string>
+    <string name="calendar">Calendar</string>
+    <string name="unit">Unit</string>
+    <string name="system_info">System info</string>
+    <string name="modify_logo">Modify LOGO</string>
+    <string name="restoration">Restoration</string>
+    <string name="after_sale">After sale</string>
+    <string name="brightness_modify">Brightness modify</string>
+    <string name="volume_setting">Volume setting</string>
+    <string name="volume_decrease_during_driver">Volume decrease during driving advice</string>
+    <string name="volume_decrease_during_phone">Volume decreases during phone calls</string>
+    <string name="dsp_setting">DSP</string>
+    <string name="alarm_volume_setting">Alarm volume setting</string>
+    <string name="volume_modify">Volume modify</string>
+    <string name="bluetooth_info_title">Bluetooth info:</string>
+    <string name="connected">Connected</string>
+    <string name="not_connected">Not connected</string>
+    <string name="bluetooth_name">Name:</string>
+    <string name="bluetooth_status">Status:</string>
+    <string name="fast">Fast</string>
+    <string name="middle">Middle</string>
+    <string name="slow">Slow</string>
+    <string name="touchpad_setting">Touchpad setting</string>
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tues">Tues</string>
+    <string name="wednes">Wednes</string>
+    <string name="thurs">Thurs</string>
+    <string name="fri">Fri</string>
+    <string name="satur">Satur</string>
+    <string name="back">Back</string>
+    <string name="unit_setting">Unit setting</string>
+    <string name="machine_type">Machine type:</string>
+    <string name="android_version">Android version:</string>
+    <string name="kernel_version">Kernel version:</string>
+    <string name="manufacturer">Manufacturer:</string>
+    <string name="resolution">Resolution:</string>
+    <string name="system_architecture">System architecture:</string>
+    <string name="android_reversion">Android reversion:</string>
+    <string name="version_name">Version name:</string>
+    <string name="default_logo">Default</string>
+    <string name="logo1">Logo one</string>
+    <string name="logo2">Logo two</string>
+    <string name="logo_select">Logo select</string>
+    <string name="reset_data">Reset data</string>
+    <string name="resetting">Resetting</string>
+    <string name="reset_complete">Reset complete</string>
+    <string name="after_sale_company">company:</string>
+    <string name="address_title">Address:</string>
+    <string name="address">No. 1, Huaxing Middle Road, Huadu District, Guangzhou City, Guangdong Province, China.</string>
+    <string name="after_sale_contact1">Contact one:</string>
+    <string name="contact1">Mr. Xu \n +86 13128725880</string>
+    <string name="after_sale_contact2">Contact two:</string>
+    <string name="contact2">Mr. Liu \n +86 13416371506</string>
+    <string name="language">Language</string>
+    <string name="language_select">Language select</string>
+    <string name="following_system">Following system</string>
+    <string name="chinese">Chinese</string>
+    <string name="english">English</string>
+    <string name="input_device">Original instrument panel</string>
+    <string name="gallery">Gallery</string>
+    <string name="downloading">Downloading</string>
+    <string name="version_update">Version update</string>
+    <string name="upload_fail_server_not_response">Failed to upload log, server not responding.</string>
+    <string name="setting">Setting</string>
+    <string name="info">Info</string>
+    <string name="apps">Apps</string>
+    <string name="climate_menu">Climate menu</string>
+    <string name="auto">Auto</string>
+    <string name="ac_tab1">Front row seat</string>
+    <string name="ac_tab2">Nd row seat</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="usb">USB</string>
+    <string name="contacts">Contacts</string>
+    <string name="mobile_phone">Mobile phone</string>
+    <string name="lighting">Lighting</string>
+    <string name="car_assist">Car assist</string>
+    <string name="not_set_mileage">Input mileage</string>
+    <string name="central_display">Central display</string>
+    <string name="central_display_luminance">Central display luminance</string>
+    <string name="display_screen">Display screen</string>
+    <string name="not_find_carplay_app">Not find carplay app</string>
+    <string name="device_id">Device id:</string>
+    <string name="time_zone">Time zone</string>
+    <string name="front">Front</string>
+    <string name="rear">Rear</string>
+    <string name="set">Set</string>
+    <string name="unconnected">Unconnected</string>
+    <string name="not_title">Not title</string>
+    <string name="ac_tab3">Airflow type</string>
+    <string name="concentrate">Concentrate</string>
+    <string name="please_stop_bluetooth_music">Please stop bluetooth music</string>
+    <string name="search">搜索</string>
+    <string name="start_nav">开始导航</string>
+    <string name="time_priority">时间优先</string>
+    <string name="km">公里</string>
+    <string name="nav_straegy_1">速度优先</string>
+    <string name="nav_straegy_2">距离优先</string>
+    <string name="nav_straegy_3">不走高速</string>
+    <string name="nav_straegy_0">推荐</string>
+    <string name="day">天</string>
+    <string name="mniute">分钟</string>
+    <string name="hour">小时</string>
+    <string name="input_address">请输入地址</string>
+    <string name="poi_types">\"汽车服务|汽车维修|餐饮服务|购物服务|生活服务|体育休闲服务|医疗保健服务|住宿服务|风景名胜|商务住宅|地名地址信息|道路附属设施|公司企业|金融保险服务|交通设施服务|科教文化服务|政府机构及社会团体\"</string>
+    <string name="history_record">历史记录</string>
+    <string name="clear">清空</string>
+    <string name="steering_column">转向柱</string>
+    <string name="seat">座位</string>
+    <string name="steering_column_seat">转向柱和座位</string>
+    <string name="update">更新</string>
+    <string name="download">下载</string>
+    <string name="offlinemap">离线地图</string>
+    <string name="updating">更新中</string>
+    <string name="unzip">解压中</string>
+</resources>

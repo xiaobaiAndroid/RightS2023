@@ -1,0 +1,5 @@
+include ':common'
+include ':module_assistant'
+include ':module_db'
+include ':app'
+rootProject.name = "RightS223"

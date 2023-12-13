@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_selected">#ffffff</color>
+    <color name="button_unselected">#818692</color>
+    <color name="status_ic_unselected">#666666</color>
+    <color name="button_breakdown">#EC0D0D</color>
+<!--    <color name="button_breakdown">#BC2A5D</color>-->
+</resources>

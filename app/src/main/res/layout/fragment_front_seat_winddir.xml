@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leftContentRV"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/centerPointV"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomButtonCV"
+        android:overScrollMode="never"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <View
+        android:id="@+id/centerPointV"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rightContentRV"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/centerPointV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomButtonCV"
+        android:overScrollMode="never"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomButtonCV"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/cl_carview"
+        app:cardElevation="6dp"
+        android:layout_marginBottom="60dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <TextView
+                android:id="@+id/driverAutoTV"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/ffffff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="Auto"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <View
+                android:id="@+id/lineV1"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/driverAutoTV"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/cl_50ffffff"
+                android:layout_marginStart="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/frontDemistIV"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_front_demist"
+                android:scaleType="fitCenter"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintStart_toEndOf="@id/lineV1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <View
+                android:id="@+id/lineV2"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/frontDemistIV"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/cl_50ffffff"
+                android:layout_marginStart="8dp"
+                />
+
+            <ImageView
+                android:id="@+id/innerLoopIV"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_car_inner_loop"
+                app:layout_constraintStart_toEndOf="@id/lineV2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                />
+
+            <View
+                android:id="@+id/lineV3"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/innerLoopIV"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/cl_50ffffff"
+                android:layout_marginStart="8dp"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/frontRearToggleFL"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/lineV3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/frontRearToggleIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_ac_toggle"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:id="@+id/frontRearToggleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/cl_ffffff"
+                    android:text="@string/front"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+
+            </FrameLayout>
+
+
+
+            <View
+                android:id="@+id/lineV4"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/frontRearToggleFL"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/cl_50ffffff"
+                android:layout_marginStart="8dp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/acOffIV"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/lineV4"
+                android:src="@drawable/ic_ac_close"
+                android:scaleType="fitCenter"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                />
+
+            <View
+                android:id="@+id/lineV5"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/acOffIV"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                android:background="@color/cl_50ffffff"
+                android:layout_marginStart="8dp"
+                />
+            <ImageView
+                android:id="@+id/rearDemistIV"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/lineV5"
+                android:src="@drawable/ic_rear_demist"
+                android:scaleType="fitCenter"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginStart="8dp"
+                />
+
+            <View
+                android:id="@+id/lineV6"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/rearDemistIV"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/cl_50ffffff"
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/frontSeatAutoTV"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/ffffff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="Auto"
+                app:layout_constraintStart_toEndOf="@id/lineV6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left|center_vertical"
+            >
+            <TextView
+                android:id="@+id/car_set_command_name"
+                android:layout_marginLeft="50px"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:textSize="30px"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:layout_gravity="right|center_vertical"
+            >
+            <TextView
+                android:id="@+id/car_set_command_select"
+                android:layout_marginRight="50px"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+
+                android:layout_width="30px"
+                android:layout_height="30px" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_original_car_km">
+
+    <TextView
+        android:id="@+id/titltTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        android:text="@string/set_original_car_km"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/contentET"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titltTV"
+        android:textSize="23sp"
+        android:textColor="@android:color/black"
+        android:inputType="number"
+        android:digits="0123456789."
+        android:layout_marginTop="20dp"
+        android:lines="1"
+        android:maxLength="15"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:hint="@string/please_input"
+        android:textColorHint="@color/cl_cccccc"
+        app:layout_constraintEnd_toStartOf="@id/confirmBt"
+        />
+
+    <TextView
+        android:id="@+id/confirmBt"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        app:layout_constraintStart_toEndOf="@id/contentET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/contentET"
+        app:layout_constraintBottom_toBottomOf="@id/contentET"
+        android:text="@string/confirm"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_confirm"
+        android:textColor="@color/ffffff"
+        android:textSize="23sp"
+        android:gravity="center"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

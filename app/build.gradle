@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.android.launcher"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 101
+        versionName "1.0.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64', 'x86'
+        }
+        signingConfig signingConfigs.debug
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file('D:\\androidworkspace\\RightS223\\leftS223.jks')
+        
+        }
+        debug {
+            storeFile file('D:\\androidworkspace\\RightS223\\leftS223.jks')
+       
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            renderscriptOptimLevel 1
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "RightS223_"+versionCode +".apk"
+                }
+            }
+        }
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            debuggable true
+
+            renderscriptOptimLevel 1
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "RightS223_"+versionCode +".apk"
+                }
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    implementation 'io.github.youth5201314:banner:2.2.2'
+//    implementation "androidx.multidex:multidex:2.0.1"
+
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+
+
+    implementation 'com.github.zhpanvip:bannerviewpager:3.5.12'
+
+    implementation 'com.github.lihangleo2:ShadowLayout:3.3.3'
+
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3@aar'
+
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+    implementation 'com.github.mik3y:usb-serial-for-android:3.5.1'
+
+
+    implementation project(path: ':module_db')
+
+//    implementation project(path: ':module_assistant')
+    implementation project(path: ':common')
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+
+//    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+
+    //日历
+//    implementation 'com.haibin:calendarview:3.7.1'
+
+
+    //浏览器查看数据库  https://github.com/amitshekhariitbhu/Android-Debug-Database
+//    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.10'
+
+    //导航
+    implementation 'com.amap.api:navi-3dmap:latest.integration'
+    //搜索
+    implementation 'com.amap.api:search:latest.integration'
+}

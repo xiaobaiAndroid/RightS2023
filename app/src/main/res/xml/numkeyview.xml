@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 全键盘-26-字母 -->
+<Keyboard
+    key_bg_res="@drawable/key_bg_rectangle"
+    key_height="@dimen/h_85"
+    key_left_padding="@dimen/w_10"
+    key_select_res="@drawable/white_light_10"
+    key_text_color="#b8bbbf"
+    key_text_size="@dimen/w_40"
+    key_top_padding="@dimen/h_10"
+    key_width="@dimen/w_90"
+    left_right_move="true"
+    qwerty="true"
+    qwerty_uppercase="false"
+    start_pos_x="@dimen/w_40"
+    start_pos_y="@dimen/h_20"
+    top_bottom_move="false" >
+
+    <!-- 第一行 -->
+    <row>
+        <keys
+            codes="1|2|3"
+            labels="1|2|3"
+            splitter="|" />
+
+    </row>
+
+    <!-- 第二行 -->
+    <row>
+
+        <!-- 切换到数字键盘 -->
+
+        <keys
+            codes="4|5|6"
+            labels="4|5|6"
+            splitter="|" />
+
+    </row>
+
+    <!-- 第三行 -->
+    <row
+        >
+        <keys
+            codes="7|8|9"
+            labels="7|8|9"
+            splitter="|" />
+
+    </row>
+    <!-- 第四行 -->
+    <row >
+        <key
+            key_code="0"
+            key_label="0"  />
+        <key
+            key_code="@string/keycode_del"
+            key_icon="@drawable/delete"
+            key_width="@dimen/w_190"/>
+    </row>
+    <!-- 行-->
+    <row >
+        <key
+            key_code="@string/keycode_space"
+            key_icon="@drawable/z_phone_stop"
+            key_label="拨打"
+            key_width="@dimen/w_280"/>
+    </row>
+</Keyboard>

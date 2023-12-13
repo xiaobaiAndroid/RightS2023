@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="module.assistant">
+
+
+    <application
+        >
+        <service
+            android:name="module.assistant.CarSiriService"
+            android:enabled="true"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

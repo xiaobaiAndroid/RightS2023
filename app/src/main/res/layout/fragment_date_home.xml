@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/weekTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateTV" />
+
+
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weekTV"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="36sp"
+        />
+
+<!--    <com.haibin.calendarview.CalendarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/timeZoneCL"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/dateTV">-->
+
+
+<!--        <com.haibin.calendarview.CalendarView-->
+<!--            android:id="@+id/calendarView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#fff"-->
+<!--            app:month_view="com.haibin.calendarviewproject.simple.SimpleMonthView"-->
+<!--            app:week_view="com.haibin.calendarviewproject.simple.SimpleWeekView"-->
+<!--            app:week_bar_view="com.haibin.calendarviewproject.EnglishWeekBar"-->
+<!--            app:calendar_height="50dp"-->
+<!--            app:current_month_text_color="#333333"-->
+<!--            app:current_month_lunar_text_color="#CFCFCF"-->
+<!--            app:min_year="2004"-->
+<!--            app:other_month_text_color="#e1e1e1"-->
+<!--            app:scheme_text="假"-->
+<!--            app:scheme_text_color="#333"-->
+<!--            app:scheme_theme_color="#333"-->
+<!--            app:selected_text_color="#fff"-->
+<!--            app:selected_theme_color="#333"-->
+<!--            app:week_start_with="mon"-->
+<!--            app:week_background="#fff"-->
+<!--            app:month_view_show_mode="mode_only_current"-->
+<!--            app:week_text_color="#111" />-->
+
+
+<!--    </com.haibin.calendarview.CalendarLayout>-->
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/timeZoneCL"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/dp_60"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:elevation="6dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/timeZoneSelectTV"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:elevation="6dp"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/cl_ffffff"-->
+<!--            android:textSize="@dimen/sp_20"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:text="@string/time_zone"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/timeZoneTV"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:textColor="@color/cl_ffffff"-->
+<!--            android:textSize="20sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            android:text="中国（UTC+08）"-->
+<!--            />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

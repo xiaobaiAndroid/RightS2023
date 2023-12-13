@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_dialog"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/cl_ffffff"
+        android:textSize="24sp"
+        />
+
+
+    <com.warkiz.widget.IndicatorStayLayout
+        android:id="@+id/seekBarSL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        >
+
+        <com.warkiz.widget.IndicatorSeekBar
+           android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:isb_max="100"
+            app:isb_min="0"
+            app:isb_show_tick_texts="true"
+            app:isb_show_indicator="circular_bubble"
+            app:isb_show_tick_marks_type="none"
+            app:isb_tick_marks_size="18dp"
+            app:isb_tick_texts_color="@color/cl_ffffff"
+            app:isb_tick_texts_size="20sp"
+            app:isb_indicator_color="@color/cl_indicator"
+            app:isb_indicator_text_color="@color/cl_ffffff"
+            app:isb_indicator_text_size="20sp"
+            app:isb_thumb_color="@color/cl_indicator"
+            app:isb_thumb_size="20sp"
+            app:isb_track_background_color="@color/ffffff"
+            app:isb_track_progress_color="@color/cl_indicator"
+            app:isb_track_background_size="6dp"
+            app:isb_track_progress_size="8dp"
+            app:isb_track_rounded_corners="true"
+            app:isb_ticks_count="2" />
+
+    </com.warkiz.widget.IndicatorStayLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

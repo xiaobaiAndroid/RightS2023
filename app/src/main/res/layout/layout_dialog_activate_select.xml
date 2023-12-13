@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_activate_select"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="@string/activate_success"
+        />
+
+    <TextView
+        android:id="@+id/contentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTV"
+        android:textColor="@color/colorBlack"
+        android:textSize="22sp"
+        android:text="@string/activate_hint"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/confirmTV"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contentTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nextActivateTV"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/ffffff"
+        android:text="@string/have"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/nextActivateTV"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toStartOf="@id/previousActivateTV"
+        app:layout_constraintTop_toTopOf="@id/confirmTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/confirmTV"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="@string/next"
+        />
+
+    <TextView
+        android:id="@+id/previousActivateTV"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toStartOf="@id/cancelTV"
+        app:layout_constraintTop_toTopOf="@id/confirmTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nextActivateTV"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="@string/previous"
+        />
+
+    <TextView
+        android:id="@+id/cancelTV"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/confirmTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/previousActivateTV"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:text="@string/cancel"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
